@@ -19,10 +19,8 @@ CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
 
-${BP_DIR}/bin/compile "${1}" "${2}" "${3}"
-
 echo ${BUILD_DIR}
 echo ${CACHE_DIR}
 echo ${ENV_DIR}
 
-cd "${1}" && dotnet test
+dotnet test
