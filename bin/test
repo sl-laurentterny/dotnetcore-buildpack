@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# bin/test <build-dir> <cache-dir> <env-dir>
+
+cd "$1" && dotnet test
